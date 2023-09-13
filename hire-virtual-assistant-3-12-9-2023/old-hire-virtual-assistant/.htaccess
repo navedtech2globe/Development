@@ -1,0 +1,21 @@
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 192.119.98.27
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+deny from 220.158.200.187
+deny from 104.24.98.144
+deny from 159.144.158.96
+deny from 195.24.207.148
+deny from 202.229.133.151
+deny from 42.1.63.231
+deny from 203.77.225.2
+deny from 124.47.185.179
+deny from 192.185.120.166
+deny from 167.206.237.230
+
